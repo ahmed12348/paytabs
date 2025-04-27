@@ -1,0 +1,7 @@
+/.env
+/vendor/
+/node_modules/
+/.idea/
+/.DS_Store
+*.log
+callback_log.txt

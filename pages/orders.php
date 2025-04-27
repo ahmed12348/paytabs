@@ -19,9 +19,9 @@ include_once('../db/db.php');
         $query = "SELECT * FROM products";
         $result = $conn->query($query);
 
-        // Check if there are products in the database
+
         if ($result->num_rows > 0) {
-            // Loop through each product and display them
+    
             while ($row = $result->fetch_assoc()) {
                 echo '<input type="checkbox" name="products[]" value="' . $row['id'] . '"> ' . $row['name'] . ' - $' . $row['price'] . '<br>';
             }
